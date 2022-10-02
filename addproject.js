@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const url = 'mongodb+srv://muthengi:muzengi@cluster0.6x8nv.mongodb.net/PortfolioProjects'
+const url = process.env.MONGODB_URI
 
 mongoose.connect(url).then( () => {
   console.log(`Connected to the database`)
